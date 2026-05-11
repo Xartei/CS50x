@@ -15,7 +15,7 @@
 # PSETs (And Solutions)
 [Week 0 - Scratch](https://cs50.harvard.edu/x/weeks/0/)
 - [PSET 0](https://cs50.harvard.edu/x/psets/0/)
-   - [Starting from Scratch](https://cs50.harvard.edu/x/psets/0/)  ||  [Solution]()
+   - [Starting from Scratch](https://cs50.harvard.edu/x/psets/0/)  ||  [Solution](https://github.com/Xartei/CS50x/tree/main/Week%200)
 
 [Week 1 - C](https://cs50.harvard.edu/x/2026/weeks/1/)
 - [PSET 1](https://cs50.harvard.edu/x/2026/psets/1/)
