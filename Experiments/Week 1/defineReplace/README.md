@@ -1,6 +1,7 @@
 # Circle Info Calculator
+<img width="1659" height="871" alt="circleInfo" src="https://github.com/user-attachments/assets/20c51175-1661-4b95-8a83-9f1c23552a89" />
 
-A comprehensive command-line utility written in C that calculates over 15 geometric, engineering, and 3D properties of a circle/sphere based solely on its radius. 
+A comprehensive command-line utility written in `C` that calculates over 15 geometric, engineering, and 3D properties of a circle/sphere based solely on its radius. 
 
 ## Features
 Given a single positive float value for the radius, the program instantly calculates:
