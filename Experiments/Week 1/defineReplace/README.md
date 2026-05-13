@@ -24,3 +24,6 @@ gcc -o circle_calc circle_calc.c -lcs50 -lm
 # Run the program
 ./circle_calc
 ```
+- The program will output all mathematical properties formatted to 5 decimal places.
+- The prompt runs in a continuous loop for quick successive calculations.
+  - **To exit:** Press ctrl+d for graceful closure, or ctrl+c to kill program
