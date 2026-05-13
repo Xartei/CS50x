@@ -1,15 +1,20 @@
 // #define Preprocessing Directive Test.
 // Calculates numerous circles parameters (as area, volume and more) using only it's radius
-// timeSpentHere = (4.5) hours
+// timeSpentHere = (5) hours
 // --------------------------------------------------------------------------------------------------------
 // Headers
-#include <cs50.h>  // Header for userPrompt functions
-#include <math.h>  // Header for sqrt()
-#include <stdio.h> // Header for i/o functions
+#include <cs50.h>   // Header for userPrompt functions
+#include <float.h>  // Header for FLT_MAX (EOF try...catch)
+#include <math.h>   // Header for sqrt()
+#include <stdio.h>  // Header for i/o functions
+#include <stdlib.h> // Header for exit() to kill program
 
 
 // PP replace directives
-#define PI 3.14159 // Value of PI
+#ifndef M_PI
+    #define M_PI 3.14159265358979323846 // Definition of PI if not defined in the library (highPrecision)
+#endif
+#define PI M_PI                         // Value of PI
 
 
 // Prototypes
@@ -39,8 +44,8 @@ void calcSemiArea(float radius);
 void calcSemiPerimeter(float radius);
 
 // 3D Sphere Info
-void calc3Dvolume(float radius);
-void calc3Dsfcarea(float radius);
+void calc3DVolume(float radius);
+void calc3DSfcArea(float radius);
 
 
 // --------------------------------------------------------------------------------------------------------
@@ -80,8 +85,8 @@ int main(void)
         calcSemiPerimeter(radius);
 
         // 3D Sphere Info
-        calc3Dvolume(radius);
-        calc3Dsfcarea(radius);
+        calc3DVolume(radius);
+        calc3DSfcArea(radius);
     }
 
     // Return 0 if successful, end of program
@@ -93,19 +98,28 @@ int main(void)
 // Prompt user for radius of circle. Return 'radius' as a float
 float getRadius(void)
 {
-    // Get radius of user's circle, only positive numbers allowed
-    printf("\n--- CIRCLE INFO CALCULATOR (Note: press ctrl+v to close)---\n\n");
+    // Get radius of user's circle.
+    printf("\n--- CIRCLE INFO CALCULATOR (Note: press ctrl+c to close)---\n\n");
     float radius;
     do
     {
         radius = get_float("Radius of your circle = ");
+        // If user types ctrl+d (throws EOF signal, get_float returns FLT_MAX) exit program gracefully to catch terminal bleeding
+        if (radius == FLT_MAX)
+        {
+            // Exit program, print a closing message
+            printf("\n(Typed ctrl+d)\tEOF, Exiting...\n");
+            exit(0);
+        }
     }
-    while (radius < 0);
-    printf("\n--- RESULTS ---\n\nPrimary Geometric Measurements\n");
+    // ctrl+d try-catch and only-positive-integers
+    while (radius <= 0);
+    printf("\n--- RESULTS ---\n\nPrimary Geometric Measurements\n\n value of radius = %0.5f\n", radius);
 
     // Return radius to main
     return radius;
 }
+
 
 
 // Primary Geometric Measurements
@@ -136,6 +150,7 @@ void calcCrvture(float radius)
     // Curvature formula = 1/radius
     printf("\t-Curvature (k) = %0.5f\n", 1 / radius);
 }
+
 
 
 // Engineering & Physics Properties
@@ -170,6 +185,7 @@ void calcRdsGyr(float radius)
     // Radius or Gyration formula = radius/2
     printf("\t-Radius of Gyration (k) = %0.5f\n", radius / 2);
 }
+
 
 
 // Bounding & Inscribed Shapes
@@ -213,6 +229,7 @@ void calcInscHexArea(float radius, double sqrt3)
 }
 
 
+
 // Semicircles
 // Semicircle Area
 void calcSemiArea(float radius)
@@ -231,9 +248,10 @@ void calcSemiPerimeter(float radius)
 }
 
 
+
 // 3D Sphere Info
 // Sphere volume script, take radius as an argument, print result directly
-void calc3Dvolume(float radius)
+void calc3DVolume(float radius)
 {
     // Volume formula = (4/3)*PI*radius^3
     printf("\n3D Info (Sphere)\n");
@@ -241,7 +259,7 @@ void calc3Dvolume(float radius)
 }
 
 // Sphere surface area script, take radius as an argument, print result directly
-void calc3Dsfcarea(float radius)
+void calc3DSfcArea(float radius)
 {
     // Surface area formula = 4*PI*radius^2
     printf("\t-Surface area (A) = %0.5f\n", 4 * PI * radius * radius);
