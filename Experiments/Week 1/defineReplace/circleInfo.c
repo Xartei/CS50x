@@ -99,7 +99,7 @@ int main(void)
 float getRadius(void)
 {
     // Get radius of user's circle.
-    printf("\n--- CIRCLE INFO CALCULATOR (Note: press ctrl+c to close)---\n\n");
+    printf("\n--- CIRCLE INFO CALCULATOR (Note: press ctrl+d to close)---\n\n");
     float radius;
     do
     {
