@@ -11,6 +11,7 @@
 - [Generalities](https://cs50.harvard.edu/x/)
 - [Syllabus](https://cs50.harvard.edu/x/syllabus/)
 - [FAQs](https://cs50.harvard.edu/x/faqs/)
+  > If you are curious to see **experiments I made along the way** of completing the course, [you can look here](https://github.com/Xartei/CS50x/tree/main/Experiments)! All of them are explained in a README.md so, no need to worry if they seem weird ;)
 
 # PSETs (And Solutions)
 [Week 0 - Scratch](https://cs50.harvard.edu/x/weeks/0/)
