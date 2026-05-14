@@ -23,7 +23,7 @@
 - [PSET 1](https://cs50.harvard.edu/x/2026/psets/1/)
    - [Hello, World](https://cs50.harvard.edu/x/2026/psets/1/world/)  ||  [Solution]()
    - [Hello, Me](https://cs50.harvard.edu/x/psets/1/me/)  ||  [Solution]()
-   - [Mario (Less Comfortable)](https://cs50.harvard.edu/x/2026/psets/1/mario/less/)  ||  [Solution]()
+   - [Mario (Less Comfortable)](https://cs50.harvard.edu/x/2026/psets/1/mario/less/)  ||  [Solution](https://github.com/Xartei/CS50x/tree/main/Week%201/Mario%20(less%20comfortable))
    - [Mario (More Comfortable)](https://cs50.harvard.edu/x/2026/psets/1/mario/more/)  ||  [Solution]()
    - [Cash](https://cs50.harvard.edu/x/2026/psets/1/cash/)  ||  [Solution]()
    - [Credit](https://cs50.harvard.edu/x/2026/psets/1/credit/)  ||  [Solution]()
