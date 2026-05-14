@@ -1,5 +1,5 @@
 # Circle Info Calculator
-<img width="1659" height="871" alt="circleInfo" src="https://github.com/user-attachments/assets/20c51175-1661-4b95-8a83-9f1c23552a89" />
+<img width="1659" height="871" alt="circleInfo-ezgif com-cut" src="https://github.com/user-attachments/assets/339606b4-94b2-486a-8547-ed25c083764b" />
 
 A comprehensive command-line utility written in `C` that calculates over 15 geometric, engineering, and 3D properties of a circle/sphere based solely on its radius. 
 
