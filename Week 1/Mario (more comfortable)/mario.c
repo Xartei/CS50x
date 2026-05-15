@@ -1,19 +1,18 @@
-// Prints left-half of a hashes pyramid program given a user given number of rows.
+// Prints a pyramid using hashes as block, of an users-given height
 // Headers
-#include <cs50.h>  // Header for userInput functions
+#include <cs50.h>  // Header for userPrompt functions
 #include <stdio.h> // Header for i/o functions
 
 // Main function
 int main(void)
 {
-    // Declare variable 'height' that will store the height number
     int height;
-    // Get height of pyramid from user. Only positive integers allowed (not-zero)
+    // Get pyramids height from user. Only positive integers, MAX = 8
     do
     {
-        height = get_int("Height of pyramid = ");
+        height = get_int("Pyramid height = ");
     }
-    while (height < 1);
+    while (height < 1 || height > 8);
 
     // Print a pyramid from that height
     // Outer loop
@@ -31,14 +30,26 @@ int main(void)
         }
 
         // This loop controls the printing of left-side hashes
-        // (hashAmount = rowNumber + 1)
+        // (same mechanism as right-side, separated by a space) (hashAmount = rowNumber + 1)
         for (int i = 0; i < rowNumber + 1; i++)
         {
             // For example, if 'rowNumber' is 0, first row get's (0 + 1 = 1) hashes
             printf("#");
         }
 
-        // When row print finishes, print a newline an restart loop
+        // Print TWO spaces to separate right side from left side of pyramid
+        printf("  ");
+
+        // This loop controls the printing of right-side hashes (same mechanism as right-side,
+        // separated by a space) (hashAmount = rowNumber + 1)
+        for (int i = 0; i < rowNumber + 1; i++)
+        {
+            // For example, if 'rowNumber' is 0, first row get's (0 + 1 = 1) hashes
+            printf("#");
+        }
+
+        // Print a newline after finishing printing row content. Do the full loop 'height' amount of
+        // time
         printf("\n");
         // END OF LOOP
     }
