@@ -3,7 +3,7 @@
 **Solution:** [Play "It´s Raining Pou" here](https://scratch.mit.edu/projects/1291934703)
 > Time Spent: Aproximately 40-50 Hours (From *Creation* to *Upload*)
 
-![PouGame](https://github.com/user-attachments/assets/753c3094-10e3-4eb8-8130-547b3a8139c6)
+<img width="476" height="356" alt="itsRainingPou" src="https://github.com/user-attachments/assets/02aeb742-984c-41c1-8895-df5e596cca70" />
 
 ### Core Mechanics
 > A mouse-controlled physics survival game where the player tracks a paddle (Trampoline) to the cursor's X-axis to keep entities ("Pou") from falling below the death boundary (Y < -180).
