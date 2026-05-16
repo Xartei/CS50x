@@ -1,5 +1,7 @@
 # Interactive Y/N Confirmation Prompt
 
+<img width="1428" height="296" alt="agreeGif" src="https://github.com/user-attachments/assets/9b25b2ed-ef10-4676-8bd8-5b6aab48b164" />
+
 A concise command-line utility written in C that prompts the user for a single-character Yes or No confirmation. It utilizes a continuous loop to enforce strict input validation until a valid response is received.
 ## Features
 
