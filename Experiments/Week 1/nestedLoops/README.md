@@ -1,5 +1,7 @@
 # Dynamic 2D Block Generator
 
+<img width="1428" height="296" alt="blockGenGif" src="https://github.com/user-attachments/assets/da534d14-9b17-4007-915d-7ddef4ba1fe0" />
+
 A comprehensive command-line utility written in C that generates a custom 2D rectangular block on the terminal. It uses nested loops to dynamically construct the shape based on a user-specified character, height, and width.
 ## Features
 
