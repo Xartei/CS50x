@@ -1,5 +1,7 @@
 # Boolean Logic Demonstrator
 
+<img width="1428" height="296" alt="boolGif" src="https://github.com/user-attachments/assets/5ce55f33-f970-497d-8576-685ad5e95a8f" />
+
 A concise command-line program written in C that demonstrates how integer values are evaluated as boolean conditional statements, proving that any non-zero integer (such as `-1`) acts as true without needing the `<stdbool.h>` library.
 ## Features
 
