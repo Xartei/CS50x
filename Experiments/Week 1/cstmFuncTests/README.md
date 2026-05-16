@@ -1,5 +1,7 @@
 # Modular Character Repeater
 
+<img width="1428" height="296" alt="protoCstmFuncGif" src="https://github.com/user-attachments/assets/7aa7f4d7-50b2-49d5-b9dc-263ea29ef1ca" />
+
 A concise command-line utility written in `C` that repeats a user-specified character a designated number of times. It serves as a practical demonstration of `C` function prototyping, modular program design, and top-down code organization.
 ## Features
 
