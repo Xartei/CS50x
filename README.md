@@ -14,6 +14,8 @@
 
 # PSETs (And Solutions)
   > If you are curious to see **experiments I made along the way** of completing the course, [you can look here](https://github.com/Xartei/CS50x/tree/main/Experiments)! All of them are explained in a README.md so, no need to worry if they seem weird ;)
+  
+> All demosntration footages were recorded using [Asciinema](https://asciinema.org/) 
 
 [Week 0 - Scratch](https://cs50.harvard.edu/x/weeks/0/)
 - [PSET 0](https://cs50.harvard.edu/x/psets/0/)
